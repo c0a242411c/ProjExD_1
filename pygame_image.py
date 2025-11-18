@@ -11,6 +11,11 @@ def main():
     clock  = pg.time.Clock()
     bg_img = pg.image.load("fig/pg_bg.jpg")
     tmr = 0
+
+    #練習3
+    koukaton3_img = pg.image.load("fig/3.png")
+    koukaton3_img = pg.transform.flip(koukaton3_img, False, True)
+
     while True:
         for event in pg.event.get():
             if event.type == pg.QUIT: return

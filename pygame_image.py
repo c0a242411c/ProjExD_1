@@ -34,7 +34,7 @@ def main():
         if key_lst[pg.K_DOWN]:
             z = +1
         if key_lst[pg.K_LEFT]:
-            y = -1
+            y = -2
         if key_lst[pg.K_RIGHT]:
             y = +1
         kk_rct.move_ip((y, z))

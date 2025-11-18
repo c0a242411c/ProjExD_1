@@ -14,7 +14,7 @@ def main():
 
     #練習3
     koukaton3_img = pg.image.load("fig/3.png")
-    koukaton3_img = pg.transform.flip(koukaton3_img, False, True)
+    koukaton3_img = pg.transform.flip(koukaton3_img, True, False)
 
     while True:
         for event in pg.event.get():
@@ -22,6 +22,11 @@ def main():
 
         screen.blit(bg_img, [0, 0])
         pg.display.update()
+
+        #練習3
+        screen.blit(koukaton3_img, [300, 200])
+        pg.display.update()
+
         tmr += 1        
         clock.tick(10)
 
